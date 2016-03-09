@@ -64,6 +64,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="sudoku.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sudokuImp.cpp" />
+    <ClCompile Include="testProgSudoku.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
