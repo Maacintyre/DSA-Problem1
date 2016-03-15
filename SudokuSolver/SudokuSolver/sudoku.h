@@ -22,40 +22,40 @@ public:
       //Postcondition: grid is initialized to the numbers 
       //    specified by the user.
 
-    //void initializeSudokuGrid(int g[][9]);
+    void initializeSudokuGrid(int g[][9]);
       //Function to initialize grid to g
       //Postcondition: grid = g;
 
     void printSudokuGrid();
       //Function to print the sudoku grid.
 	
-    //bool solveSudoku();
+    bool solveSudoku();
       //Funtion to solve the sudoku problem.
       //Postcondition: If a solution exits, it returns true,
       //    otherwise it returns false.
-    //bool findEmptyGridSlot(int &row, int &col);
+
+    bool findEmptyGridSlot(int &, int &);
       //Function to determine if the grid slot specified by 
       //row and col is empty.
       //Postcondition: Returns true if grid[row][col] = 0;
 
-    //bool canPlaceNum(int row, int col, int num);
+    bool canPlaceNum(int row, int col, int num);
       //Function to determine if num can be placed in 
       //grid[row][col]
       //Postcondition: Returns true if num can be placed in
       //    grid[row][col], otherwise it returns false.
 
-    //bool numAlreadyInRow(int row, int num);
+    bool numAlreadyInRow(int row, int num);
       //Function to determine if num is in grid[row][]
       //Postcondition: Returns true if num is in grid[row][],
       //    otherwise it returns false.
 
-    //bool numAlreadyInCol(int col, int num);
+    bool numAlreadyInCol(int col, int num);
       //Function to determine if num is in grid[row][]
       //Postcondition: Returns true if num is in grid[row][],
       //    otherwise it returns false.
 
-    //bool numAlreadyInBox(int smallGridRow, int smallGridCol, 
-                         int num);
+    bool numAlreadyInBox(int smallGridRow, int smallGridCol, int num);
       //Function to determine if num is in the small grid
       //Postcondition: Returns true if num is in small grid,
       //    otherwise it returns false.
